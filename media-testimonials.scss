@@ -1,0 +1,24 @@
+@media (max-width:700px) {
+    .testimonials{
+        display:grid;
+        max-width:100%;
+        height:1000px;
+        grid-template-areas: 
+        "t t t"
+        "r r r"
+        "k k k"
+        "b b b"
+    }
+
+    .margaret{
+        grid-area:m;
+    }
+
+    .fred{
+        grid-area:f;
+    }
+
+    .sarah{
+        grid-area:s;
+    }
+}

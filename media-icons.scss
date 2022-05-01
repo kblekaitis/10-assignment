@@ -1,0 +1,96 @@
+@media (max-width:700px) {
+
+    .flex-container2 {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: #F8F9FA;
+        max-width: 100%;
+        height: 700px;
+        font-family: 'Lato', sans-serif;
+
+        img {
+            max-width: 70px;
+            filter: invert(29%) sepia(76%) saturate(3618%) hue-rotate(202deg) brightness(107%) contrast(103%);
+        }
+
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 6px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 0.9em;
+            color: gray;
+            text-align: center;
+            padding-bottom:40px;
+        }
+    }
+
+    /* Responsive, Bootstrap, Easy to use */
+
+    .flex-container2 {
+        display: grid;
+        height: 1000px;
+    }
+
+    .grid-icons {
+        display: grid !important;
+        justify-content: center !important;
+        grid-template-areas:
+            "r r r"
+            "b b b"
+            "e e e"
+    }
+
+    /* Responsive */
+
+    .responsive {
+        grid-area: r;
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 200px;
+        }
+    }
+
+
+    /* Bootstrap */
+
+    .bootstrap {
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+
+        .bootstrap p {
+            width: 200px;
+        }
+    }
+
+
+    /* Checkmark */
+
+    .easy {
+        grid-area: e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 200px;
+        flex-grow: 1;
+        align-items: center;
+
+        .easy p {
+            width: 200px;
+        }
+    }
+}
